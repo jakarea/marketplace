@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg">
+
+  <!-- Bootstrap CSS start -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Bootstrap CSS end -->
+
+  <!-- plugin CSS start -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- plugin CSS end -->
+
+  <!-- custom CSS start -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/job-list.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- custom CSS end -->
+
+  <title>Job List - Page</title>
+</head>
+
+<body>
+
+  <!-- nav section start -->
+  <nav class="navbar header-section header-2 navbar-expand-xl navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <!-- <img src="./assets/images/logo.png" alt="Logo" class="img-fluid"> -->
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Become a member</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <div class="search-box">
+            <input type="text" placeholder="Search here...">
+            <i class="fas fa-search"></i>
+          </div>
+          <a href="#" class="bttn-login">Log In</a>
+          <a href="#" class="bttn-regis">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- nav section end -->
+
+  <!-- hero section start -->
+  <section class="job-list-hero-section">
+    <div class="hero-ol">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="job-list-hero-txt">
+              <h1>Find a professional for all your jobs in <br> and around the house</h1>
+
+              <div class="search-job-box">
+                <form >
+                  <div class="form-group">
+                    <input type="text" placeholder="Search here..." class="form-control">
+                    <button type="submit" class="btn common-bttn">Search Job</button>
+                  </div>
+                </form>
+                <div class="recent-search-key">
+                  <a href="#">Web Dev</a>
+                  <a href="#">Mobile Dev</a>
+                  <a href="#">Design</a>
+                  <a href="#">Writing</a>
+                  <a href="#">Admin Support</a>
+                  <a href="#">Customer Service</a>
+                  <a href="#">Marketing</a>
+                  <a href="#">Accounting</a>
+                  <a href="#">View all categories</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero section end -->
+
+  <!-- job list section start -->
+  <section class="job-list-section pa-y6">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="job-list-header">
+            <h3>Showing 34 Jobs</h3>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="job-list-filter">
+            <div class="form-check my-check-label">
+              <input class="form-check-input" type="checkbox" value="" id="fulltime">
+              <label class="form-check-label" for="fulltime">
+                Fulltime
+              </label>
+            </div>
+            <div class="form-check my-check-label">
+              <input class="form-check-input" type="checkbox" value="" id="freelance">
+              <label class="form-check-label" for="freelance">
+                Freelance
+              </label>
+            </div>
+
+            <div class="d_flex">
+              <label class="form-check-label" for="details">Details</label>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="details">
+              </div>
+            </div>
+            <div class="d_flex">
+              <label class="form-check-label" for="salary">Salary</label>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="salary">
+              </div>
+            </div>
+
+            <div class="newst-bttn">
+              <select>
+                <option value="">Newest</option>
+                <option value="">Oldest</option>
+              </select>
+            </div>
+
+            <div class="filter-bttn">
+              <a href="#">
+                <img src="./assets/images/icons/filter.svg" alt="Filter" class="img-fluid">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="job-list-wrapper">
+            <!-- item -->
+            <div class="job-item-box">
+              <div class="media">
+                <div class="avatar">
+                  <img src="./assets/images/job-avatar.svg" alt="Avatar" class="img-fluid">
+                </div>
+                <div class="media-body">
+                  <h5>Senior UX Designer</h5>
+                  <p>Highspeed Studios</p>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/salaray-icon.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>$14,000 - $25,000</h6>
+                  <span>Monthly Salary</span>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/gps-orange.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>London, England</h6>
+                  <span>Location</span>
+                </div>
+              </div>
+              <div class="bttns">
+                <a href="#">Apply Now</a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+              </div>
+
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div class="job-item-box">
+              <div class="media">
+                <div class="avatar">
+                  <img src="./assets/images/job-avatar.svg" alt="Avatar" class="img-fluid">
+                </div>
+                <div class="media-body">
+                  <h5>Senior UX Designer</h5>
+                  <p>Highspeed Studios</p>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/salaray-icon.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>$14,000 - $25,000</h6>
+                  <span>Monthly Salary</span>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/gps-orange.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>London, England</h6>
+                  <span>Location</span>
+                </div>
+              </div>
+              <div class="bttns">
+                <a href="#">Apply Now</a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+              </div>
+
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div class="job-item-box">
+              <div class="media">
+                <div class="avatar">
+                  <img src="./assets/images/job-avatar.svg" alt="Avatar" class="img-fluid">
+                </div>
+                <div class="media-body">
+                  <h5>Senior UX Designer</h5>
+                  <p>Highspeed Studios</p>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/salaray-icon.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>$14,000 - $25,000</h6>
+                  <span>Monthly Salary</span>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/gps-orange.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>London, England</h6>
+                  <span>Location</span>
+                </div>
+              </div>
+              <div class="bttns">
+                <a href="#">Apply Now</a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+              </div>
+
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div class="job-item-box">
+              <div class="media">
+                <div class="avatar">
+                  <img src="./assets/images/job-avatar.svg" alt="Avatar" class="img-fluid">
+                </div>
+                <div class="media-body">
+                  <h5>Senior UX Designer</h5>
+                  <p>Highspeed Studios</p>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/salaray-icon.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>$14,000 - $25,000</h6>
+                  <span>Monthly Salary</span>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/gps-orange.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>London, England</h6>
+                  <span>Location</span>
+                </div>
+              </div>
+              <div class="bttns">
+                <a href="#">Apply Now</a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+              </div>
+
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div class="job-item-box">
+              <div class="media">
+                <div class="avatar">
+                  <img src="./assets/images/job-avatar.svg" alt="Avatar" class="img-fluid">
+                </div>
+                <div class="media-body">
+                  <h5>Senior UX Designer</h5>
+                  <p>Highspeed Studios</p>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/salaray-icon.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>$14,000 - $25,000</h6>
+                  <span>Monthly Salary</span>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/gps-orange.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>London, England</h6>
+                  <span>Location</span>
+                </div>
+              </div>
+              <div class="bttns">
+                <a href="#">Apply Now</a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+              </div>
+
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div class="job-item-box">
+              <div class="media">
+                <div class="avatar">
+                  <img src="./assets/images/job-avatar.svg" alt="Avatar" class="img-fluid">
+                </div>
+                <div class="media-body">
+                  <h5>Senior UX Designer</h5>
+                  <p>Highspeed Studios</p>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/salaray-icon.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>$14,000 - $25,000</h6>
+                  <span>Monthly Salary</span>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/gps-orange.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>London, England</h6>
+                  <span>Location</span>
+                </div>
+              </div>
+              <div class="bttns">
+                <a href="#">Apply Now</a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+              </div>
+
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div class="job-item-box">
+              <div class="media">
+                <div class="avatar">
+                  <img src="./assets/images/job-avatar.svg" alt="Avatar" class="img-fluid">
+                </div>
+                <div class="media-body">
+                  <h5>Senior UX Designer</h5>
+                  <p>Highspeed Studios</p>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/salaray-icon.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>$14,000 - $25,000</h6>
+                  <span>Monthly Salary</span>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/gps-orange.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>London, England</h6>
+                  <span>Location</span>
+                </div>
+              </div>
+              <div class="bttns">
+                <a href="#">Apply Now</a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+              </div>
+
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div class="job-item-box">
+              <div class="media">
+                <div class="avatar">
+                  <img src="./assets/images/job-avatar.svg" alt="Avatar" class="img-fluid">
+                </div>
+                <div class="media-body">
+                  <h5>Senior UX Designer</h5>
+                  <p>Highspeed Studios</p>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/salaray-icon.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>$14,000 - $25,000</h6>
+                  <span>Monthly Salary</span>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/gps-orange.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>London, England</h6>
+                  <span>Location</span>
+                </div>
+              </div>
+              <div class="bttns">
+                <a href="#">Apply Now</a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+              </div>
+
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div class="job-item-box">
+              <div class="media">
+                <div class="avatar">
+                  <img src="./assets/images/job-avatar.svg" alt="Avatar" class="img-fluid">
+                </div>
+                <div class="media-body">
+                  <h5>Senior UX Designer</h5>
+                  <p>Highspeed Studios</p>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/salaray-icon.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>$14,000 - $25,000</h6>
+                  <span>Monthly Salary</span>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/gps-orange.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>London, England</h6>
+                  <span>Location</span>
+                </div>
+              </div>
+              <div class="bttns">
+                <a href="#">Apply Now</a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+              </div>
+
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div class="job-item-box">
+              <div class="media">
+                <div class="avatar">
+                  <img src="./assets/images/job-avatar.svg" alt="Avatar" class="img-fluid">
+                </div>
+                <div class="media-body">
+                  <h5>Senior UX Designer</h5>
+                  <p>Highspeed Studios</p>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/salaray-icon.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>$14,000 - $25,000</h6>
+                  <span>Monthly Salary</span>
+                </div>
+              </div>
+              <div class="media">
+                <img src="./assets/images/icons/gps-orange.svg" alt="Avatar" class="img-fluid">
+                <div class="media-body">
+                  <h6>London, England</h6>
+                  <span>Location</span>
+                </div>
+              </div>
+              <div class="bttns">
+                <a href="#">Apply Now</a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+              </div>
+
+            </div>
+            <!-- item -->
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- paggination -->
+          <div class="job-list-apggination">
+            <nav aria-label="Page navigation example">
+              <a href="#" class="prev"><i class="fas fa-angles-left"></i> Previous</a>
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+              </ul>
+              <a href="#" class="next">Next <i class="fas fa-angles-right"></i></a>
+            </nav>
+          </div>
+          <!-- paggination -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- job list section end -->
+
+  <!-- upcomming events start -->
+  <section class="upcomming-events-sec pa-y6">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="upcomming-head">
+            <h3>Upcoming Events</h3>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="upcomming-head-bttn">
+            <div class="bttns">
+              <i class="fas fa-calendar"></i>
+              <select>
+                <option value="">Filter Date</option>
+                <option value="">1</option>
+              </select>
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="bttns">
+              <select>
+                <option value="">Newest</option>
+                <option value="">1</option>
+              </select>
+              <i class="fas fa-angle-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <!-- item -->
+        <div class="col-lg-4">
+          <div class="upcomming-event-box">
+            <div class="thumbnail">
+              <img src="./assets/images/job-list/events-img.svg" alt="Event" class="img-fluid">
+            </div>
+            <div class="txt">
+              <div class="date-box active">
+                <h4>15</h4>
+                <span>NOV</span>
+                <a href="#">
+                  <img src="./assets/images/icons/check-green.svg" alt="check-green" class="img-fluid">
+                </a>
+              </div>
+              <div class="title">
+                <h6>MOBILE APP</h6>
+                <h5>Global Android Programmer Meetup 2020 </h5>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <!-- item -->
+        <!-- item -->
+        <div class="col-lg-4">
+          <div class="upcomming-event-box">
+            <div class="thumbnail">
+              <img src="./assets/images/job-list/events-img.svg" alt="Event" class="img-fluid">
+            </div>
+            <div class="txt">
+              <div class="date-box">
+                <h4>15</h4>
+                <span>NOV</span>
+                <a href="#">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+              <div class="title">
+                <h6>ART EXIBITHION</h6>
+                <h5>Paris Designer Meetup with Ziro Partner</h5>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <!-- item -->
+        <!-- item -->
+        <div class="col-lg-4">
+          <div class="upcomming-event-box">
+            <div class="thumbnail">
+              <img src="./assets/images/job-list/events-img.svg" alt="Event" class="img-fluid">
+            </div>
+            <div class="txt">
+              <div class="date-box">
+                <h4>15</h4>
+                <span>NOV</span>
+                <a href="#">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+              <div class="title">
+                <h6>ACCOUNTING</h6>
+                <h5>Bussiness Plan in Pandemic with Famous Native Speaker</h5>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <!-- item -->
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center mt-5">
+            <a href="#" class="common-bttn">View more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- upcomming events end -->
+
+    <!-- hero bottom start -->
+    <div class="hero-bottom pa-y6">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="company-logos-wrap">
+              <!-- item -->
+              <a href="#">
+                <img src="./assets/images/icons/company-01.svg" alt="Company" class="img-fluid">
+              </a>
+              <!-- item -->
+              <!-- item -->
+              <a href="#">
+                <img src="./assets/images/icons/company-02.svg" alt="Company" class="img-fluid">
+              </a>
+              <!-- item -->
+              <!-- item -->
+              <a href="#">
+                <img src="./assets/images/icons/company-03.svg" alt="Company" class="img-fluid">
+              </a>
+              <!-- item -->
+              <!-- item -->
+              <a href="#">
+                <img src="./assets/images/icons/company-04.svg" alt="Company" class="img-fluid">
+              </a>
+              <!-- item -->
+              <!-- item -->
+              <a href="#">
+                <img src="./assets/images/icons/company-05.svg" alt="Company" class="img-fluid">
+              </a>
+              <!-- item -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hero bottom end -->
+
+  <!-- footer section start -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="subscribe-txt">
+            <h4>Don’t miss our weekly updates <br> about freelancer career</h4>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="subscribe-box">
+            <form>
+              <div class="form-group">
+                <input type="text" placeholder="Enter your email address..." class="form-control">
+                <button type="submit" class="btn btn-submit">SUBSCRIBE</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-custom">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="ftr-links">
+                <h5>Ziro</h5>
+
+                <ul>
+                  <li><a href="#">Why Ziro</a></li>
+                  <li><a href="#">Enterprise</a></li>
+                  <li><a href="#">Customer Story</a></li>
+                  <li><a href="#">Security</a></li>
+                  <li><a href="#">Pricing</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="ftr-links">
+                <h5>Resources</h5>
+
+                <ul>
+                  <li><a href="#">Download</a></li>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Guides</a></li>
+                  <li><a href="#">Partner</a></li>
+                  <li><a href="#">Directories</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="ftr-links">
+                <h5>Company</h5>
+
+                <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#">Sign Up</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="ftr-links ms-lg-5">
+                <h5>Get in Touch with Us</h5>
+
+                <div class="media">
+                  <img src="./assets/images/icons/gps-2.svg" alt="a" class="img-fluid">
+                  <div class="media-body">
+                    <h6>832 Thompson Drive, San Fransisco <br> CA 94107, United States</h6>
+                  </div>
+                </div>
+                <div class="media">
+                  <img src="./assets/images/icons/call.svg" alt="a" class="img-fluid">
+                  <div class="media-body">
+                    <h6>+123 345123 556</h6>
+                  </div>
+                </div>
+                <div class="media">
+                  <img src="./assets/images/icons/envelope.svg" alt="a" class="img-fluid">
+                  <div class="media-body">
+                    <h6>support@ziro.id</h6>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="ftr-copy">
+            <p>Ziro Freelancer Landing Website - &copy; 2020 All Rights Reserved</p>
+
+            <p>Made with <i class="fas fa-heart"></i> by Peterdraw</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+  <!-- Bootstrap Bundle with Popper JS start -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Bundle with Popper JS end -->
+
+
+  <!-- plugin js start -->
+  <script src="assets/js/custom.js"></script>
+  <!-- plugin js end -->
+
+</body>
+
+</html>

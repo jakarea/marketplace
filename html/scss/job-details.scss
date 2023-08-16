@@ -1,0 +1,606 @@
+@use './util/index' as m;
+@use './util/variabls' as v;
+@use './util/media-query' as q;
+
+// variable  
+$dark: v.$dark;
+$light: v.$light;
+$primary: v.$primary;
+$c363848: v.$c363848;
+$cFE8D4D: v.$cFE8D4D;
+$c2E2E2E: v.$c2E2E2E;
+$cA9A9A9: v.$cA9A9A9;
+$shadow1: v.$shadow1;
+$shadow2: v.$shadow2;
+$cF0EEFF: v.$cF0EEFF;
+$cF2F2F2: v.$cF2F2F2;
+$cF8F9FD: v.$cF8F9FD;
+$c818181: v.$c818181;
+// regular css @e
+
+
+// hero css 
+.job-details-hero-sec {
+    background: var(--primary, #5F4BDB);
+    padding: 3.5rem 0 12rem;
+
+    .job-details-hero-txt {
+        text-align: center;
+
+        h1 {
+            color: var(--white, #FFF);
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        p {
+            color: var(--white, #FFF);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 0.6rem;
+        }
+    }
+}
+
+.details-sidebar-box {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 7px 22px 0px rgba(143, 134, 195, 0.07);
+    padding: 2.5rem 1.8rem;
+
+    .profile {
+        text-align: center;
+        margin-bottom: 3rem;
+
+        .avatar {
+            img {
+                width: 8rem;
+                height: 8rem;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        h5 {
+            color: #000;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-top: 1.8rem;
+        }
+
+        p {
+            color: rgba(0, 0, 0, 0.70);
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 1.8rem;
+        }
+
+        a {
+            display: inline-block;
+            border-radius: 60px;
+            background: var(--primary, #5F4BDB);
+            color: var(--white, #FFF);
+            font-size: 18px;
+            font-style: normal;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            line-height: normal;
+            padding: 10px 60px;
+
+            &:hover {
+                background-color: #313131;
+                color: $light;
+            }
+        }
+    }
+
+    .job-status {
+        .media {
+            align-items: center;
+
+            i {
+                width: 2.8rem;
+                height: 2.8rem;
+                border-radius: 14px;
+                background-color: #5F4BDB;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                color: $light;
+                margin-right: .8rem;
+            }
+
+            h5 {
+                color: #000;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            p {
+                color: #AEAEAE;
+                font-family: "Poppins", sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+
+    .about-txt {
+        padding-top: 2rem;
+        margin-top: 2rem;
+        border-top: 1px solid #EBEBEB;
+
+        h5 {
+            color: var(--dark, #363848);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        p {
+            color: #313131;
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 1rem;
+        }
+    }
+
+    .bttns {
+        margin-top: 2rem;
+
+        a {
+            &:first-child {
+                border-radius: 77px;
+                background: #EEECFF;
+                color: var(--primary, #5F4BDB);
+                font-family: "Poppins", sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                display: inline-block;
+                padding: 1rem 1.45rem;
+                margin-right: 0.3rem;
+            }
+
+            &:last-child {
+                border-radius: 77px;
+                color: var(--dark, #363848);
+                font-family: "Poppins", sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                display: inline-block;
+                padding: 1rem 1.45rem;
+                border: 1px solid #EDEDED;
+                margin-left: 0.3rem;
+                transition: all linear .3s;
+
+                &:hover {
+                    background-color: #5F4BDB;
+                    color: $light;
+                }
+            }
+        }
+    }
+}
+
+.job-main-details-box {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 7px 22px 0px rgba(143, 134, 195, 0.07);
+    padding: 3rem;
+    height: 100%;
+
+    .d-flex {
+        @include m.df(space-between);
+        margin-bottom: 2rem;
+
+        h3 {
+            color: var(--dark, #363848);
+            font-size: 38px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        p {
+            color: var(--dark, #363848);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 0.5rem;
+        }
+
+        .right {
+            @include m.df;
+
+            a {
+                &:last-child {
+                    border-radius: 37px;
+                    background: #FFD9D9;
+                    width: 3.7rem;
+                    height: 3.7rem;
+                    border-radius: 50%;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all linear .2s;
+                    border: 1px solid #E6E6E6;
+
+                    i {
+                        font-size: 1.5rem;
+                        color: #FF5353;
+                    }
+
+                    &:hover {
+                        border-color: #FF5353;
+                        background-color: #FF5353;
+
+                        i {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                &:first-child {
+                    border-radius: 60px;
+                    background: #5F4BDB;
+                    color: $light;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    display: inline-block;
+                    padding: 1.1rem 3rem;
+                    margin-right: 1.5rem;
+                    font-family: "Poppins", sans-serif;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: #5F4BDB;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .media {
+        align-items: center;
+        margin-top: 1rem;
+
+        img {
+            margin-right: 1rem;
+        }
+
+        h5 {
+            color: #2E2E2E;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        p {
+            color: #8A8A8A;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            font-family: "Poppins", sans-serif;
+            line-height: normal;
+        }
+    }
+
+    .small-title {
+        h5 {
+            color: var(--dark, #363848);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        p {
+            color: var(--dark, #363848);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    .description {
+        margin-top: 3rem;
+
+        h5 {
+            color: var(--dark, #363848);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        p {
+            color: var(--dark, #363848);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            margin-top: 1rem;
+        }
+    }
+
+    .gallery {
+        margin-top: 3rem;
+
+        h5 {
+            color: var(--dark, #363848);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+
+    .gallery-img {
+        margin-top: 1.5rem;
+
+        img {
+            border-radius: 1rem;
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+.job-details-main-sec {
+    margin-top: -8rem;
+}
+
+.job-apply-form {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 7px 22px 0px rgba(143, 134, 195, 0.07);
+    margin-top: 1.9rem;
+    padding: 2rem 2.5rem;
+
+    h5 {
+        color: var(--dark, #363848);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    form {
+        .form-group {
+            margin-top: 2rem;
+
+            label {
+                color: var(--black, #1F2131);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                font-family: "Poppins", sans-serif;
+                line-height: normal;
+                display: block;
+                margin-bottom: 1rem;
+            }
+
+            .form-control {
+                border-radius: 60px;
+                border: 1px solid #C2C2C2;
+                background: #FBFBFB;
+                height: 3.8rem;
+                padding-left: 1.6rem;
+                color: var(--dark, #363848);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                &:focus-within {
+                    border-color: #5F4BDB;
+                }
+            }
+
+            textarea.form-control {
+                padding-top: 1rem;
+                height: 120px;
+                resize: none;
+                border-radius: 20px;
+            }
+        }
+
+        .attach-resume {
+            margin-top: 3rem;
+        }
+
+        .form-submit {
+            margin-top: 4rem;
+            @include m.df(space-between);
+
+            .btn-submit {
+                border-radius: 60px;
+                background: var(--primary, #5F4BDB);
+                color: #FFFDFD;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                font-family: "Poppins", sans-serif;
+                padding: 1rem 3rem;
+                transition: all linear .3s;
+
+                &:hover {
+                    background-color: #1F2131;
+                }
+            }
+
+            .btn-cancel {
+                border-radius: 60px;
+                background: var(--primary, #F4F4F4);
+                color: #9F9F9F;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                font-family: "Poppins", sans-serif;
+                padding: 1rem 2rem;
+                transition: all linear .3s;
+
+                &:hover {
+                    background-color: #1F2131;
+                    color: $light;
+                }
+            }
+        }
+    }
+}
+
+// file upload  
+.attach-resume {
+    input {
+        opacity: 0;
+        height: 0;
+    }
+
+    .file-upload {
+        label {
+            border-radius: 14px;
+            border: 2px dashed var(--grey-02, #C2C2C2);
+            background: var(--grey-03, #F5F5F5);
+            padding: 0.7rem 0.8rem;
+            cursor: pointer;
+
+            i {
+                width: 3.2rem;
+                height: 3.2rem;
+                border-radius: 14px;
+                background-color: #5F4BDB;
+                color: $light;
+                font-size: 1.2rem;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 1rem;
+            }
+
+            h6 {
+                color: var(--dark, #363848);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-top: 0.2rem;
+            }
+
+            p {
+                color: var(--grey-01, #A5A5A5);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+    }
+
+    #fileInfo {
+        margin-top: 1.6rem;
+        div {
+            border-radius: 14px;
+            border: 1px solid var(--primary, #5F4BDB);
+            padding: .8rem 1rem;
+            position: relative;
+            .close-button{
+                position: absolute;
+                right: -5px;
+                top: -6px;
+               
+                i{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    background-color: red;
+                    border-radius: 50%;
+                    font-size: 1rem;
+                    color: $light;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                }
+            }
+
+            h6 {
+                color: var(--dark, #363848);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 0.2rem;
+            }
+
+            p {
+                color: var(--primary, #5F4BDB); 
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+
+    }
+}
+
+// small phone device
+@include q.responsive(phone) {}
+
+// landscape phone device 
+@include q.responsive(landphone) {}
+
+// tablet device 
+@include q.responsive(tablet) {}
+
+// landtablet device 
+@include q.responsive(landtablet) {}
+
+// regular device 
+@include q.responsive(regular) {}
+
+// large device 
+@include q.responsive(large) {
+    .details-sidebar-box {
+        padding: 1.5rem 1.1rem;
+    }
+
+    .details-sidebar-box .job-status .media h5 {
+        font-size: 1rem;
+    }
+
+    .details-sidebar-box .bttns a:last-child,
+    .details-sidebar-box .bttns a:first-child {
+        font-size: 14px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

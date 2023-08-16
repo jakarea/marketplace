@@ -1,0 +1,116 @@
+@use './util/variabls' as v;
+@use './util/media-query' as q;
+
+// small phone device
+@include q.responsive(phone) {
+    
+}
+
+// landscape phone device 
+@include q.responsive(landphone) {
+     
+}
+
+// tablet device 
+@include q.responsive(tablet) {
+     
+}
+
+// landtablet device 
+@include q.responsive(landtablet) {
+    
+}
+
+// regular device 
+@include q.responsive(regular) {
+    
+}
+
+// large device 
+@include q.responsive(large) {
+    .header-section .navbar-nav .nav-item .nav-link{
+        font-size: 1rem;
+    }
+    .hero-txt-wrap .hero-bttn a.demo-bttn,
+    .common-bttn,
+    .header-section .d-flex .bttn-regis,
+    .header-section .d-flex .bttn-login{
+        font-size: 1rem;
+    }
+
+    .heading-one{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .hero-txt-wrap{
+        padding-top: 4rem;
+    }
+    .pa-y6{
+        padding: 4rem 0;
+    }
+    .how-it-workes-txt h2{
+        font-size: 3rem;
+    }
+    .how-it-workes-txt .media h6{
+        font-size: 1.2rem;
+    }
+    .why-choice-box{
+        padding: 1.3rem;
+    }
+    .heading-three{
+        font-size: 1.8rem;
+    }
+    .featured-profile-box .media h5{
+        font-size: 1rem;
+    }
+    .featured-profile-box{
+        margin: 0.7rem;
+        padding: 1rem;
+    }
+    .featured-job-box{
+        padding: 1.5rem;
+    }
+    .featured-job-box .price h6{
+        font-size: 14px;
+    }
+    .featured-job-box .bttn a:last-child{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .count-box-sec .count-box-wrap h4{
+        font-size: 3rem;
+    }
+    .price-section .price-item-box{
+        padding: 1.5rem;
+    }
+    .price-section .price-item-box ul li{
+        font-size: 14px;
+        line-height: 35px;
+        img{
+            margin-right: 0.5rem;
+        }
+    }
+
+    .latest-news-sec .latest-news-box .text h4{
+        font-size: 1.5rem;
+    }
+    .how-it-workes-txt .media{
+        padding: 1rem;
+    }
+    .how-it-workes-txt .media span{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .event-hero-box .event-hero-txt h1{
+        font-size: 2.2rem;
+    }
+    .event-hero-box .event-hero-txt p{
+        font-size: 14px;
+    }
+}
+
+// extra large device 
+@include q.responsive(extralarge) {
+   
+}

@@ -1,0 +1,404 @@
+.freelancer-list-hero-section {
+  background-color: #ffffff;
+  background-image: url("../images/freelancer-list/hero-bg.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  padding: 8rem 0;
+  padding-bottom: 22rem;
+}
+
+.freelancer-list-hero-txt {
+  padding-top: 5rem;
+  text-align: center;
+}
+.freelancer-list-hero-txt h1 {
+  color: var(--black, #1F2131);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.freelancer-list-hero-txt .search-job-box {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+}
+.freelancer-list-hero-txt .search-job-box form .form-group {
+  position: relative;
+}
+.freelancer-list-hero-txt .search-job-box form .form-group .select-box-2 {
+  position: absolute;
+  left: 13rem;
+  top: 1.5rem;
+}
+.freelancer-list-hero-txt .search-job-box form .form-group .select-box-2 select {
+  color: var(--dark, #363848);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: transparent;
+  border: 0;
+  min-width: 120px;
+}
+.freelancer-list-hero-txt .search-job-box form .form-group .select-box {
+  position: absolute;
+  left: 2rem;
+  top: 1.5rem;
+}
+.freelancer-list-hero-txt .search-job-box form .form-group .select-box select {
+  color: var(--dark, #363848);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  min-width: 120px;
+  background-color: transparent;
+  border: 0;
+}
+.freelancer-list-hero-txt .search-job-box form .form-group .select-box i {
+  color: #5F4BDB;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.freelancer-list-hero-txt .search-job-box form .form-group .form-control {
+  border-radius: 60px;
+  background: #FFF;
+  border: 0;
+  box-shadow: 0px 19px 84px 0px rgba(62, 53, 120, 0.05);
+  height: 4.5rem;
+  padding-left: 19em;
+  padding-right: 3rem;
+  color: #818181;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.freelancer-list-hero-txt .search-job-box form .form-group .btn {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  padding: 0.8rem 1.6rem;
+  border-radius: 37px;
+  color: var(--white, #FFF);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: var(--accent, #FE8D4D);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+.freelancer-list-hero-txt .search-job-box form .form-group .btn i {
+  margin-left: 0.6rem;
+}
+.freelancer-list-hero-txt .search-job-box form .form-group .btn:hover {
+  background-color: #818181;
+}
+.freelancer-list-hero-txt .search-job-box .recent-search-key {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.freelancer-list-hero-txt .search-job-box .recent-search-key a {
+  display: inline-block;
+  border-radius: 50px;
+  border: 1px solid #E9E6FE;
+  color: var(--dark, #363848);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  line-height: normal;
+  padding: 9px 20px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  transition: all linear 0.3s;
+}
+.freelancer-list-hero-txt .search-job-box .recent-search-key a:hover {
+  color: #5F4BDB;
+  border-color: #5F4BDB;
+}
+
+.custom-margin-minus {
+  margin-top: -10rem;
+}
+
+.freelancer-list-header h3 {
+  color: #363848;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.freelancer-list-filter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.freelancer-list-filter .my-check-label.form-check {
+  margin-right: 2rem;
+  align-items: center;
+}
+.freelancer-list-filter .my-check-label.form-check .form-check-label {
+  font-family: "Poppins", sans-serif;
+  color: var(--dark, #363848);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 0.5rem;
+  margin-top: 0.25rem;
+}
+.freelancer-list-filter .my-check-label.form-check .form-check-input[type=checkbox] {
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.1rem;
+  border: 2px solid #E4CFFF;
+}
+.freelancer-list-filter .my-check-label.form-check .form-check-input:checked {
+  background-color: transparent;
+  border-color: #5F4BDB;
+}
+.freelancer-list-filter .my-check-label.form-check .form-check-input:checked[type=checkbox] {
+  background-image: url("../images/check.png");
+  background-size: 70%;
+}
+.freelancer-list-filter .d_flex {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.freelancer-list-filter .d_flex .form-check-label {
+  font-family: "Poppins", sans-serif;
+  color: var(--dark, #363848);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 1rem;
+}
+.freelancer-list-filter .d_flex .form-check-input:checked {
+  background-color: #5F4BDB;
+  border-color: #5F4BDB;
+}
+.freelancer-list-filter .newst-bttn {
+  margin-right: 2rem;
+}
+.freelancer-list-filter .newst-bttn select {
+  border-radius: 60px;
+  border: 1px solid #E6E6E6;
+  color: var(--dark, #363848);
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: transparent;
+}
+.freelancer-list-filter .filter-bttn a {
+  border-radius: 60px;
+  border: 1px solid #E6E6E6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.freelancer-list-apggination {
+  margin-top: 4rem;
+}
+.freelancer-list-apggination nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.freelancer-list-apggination nav .pagination {
+  display: inline-flex;
+  justify-content: center;
+  background: #ECDEFF;
+  border-radius: 3rem;
+}
+.freelancer-list-apggination nav .pagination .page-item .page-link {
+  color: var(--primary, #5F4BDB);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  line-height: normal;
+  padding: 1rem 1.5rem;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.freelancer-list-apggination nav .pagination .page-item .page-link:hover {
+  background-color: #5F4BDB;
+  color: #ffffff;
+}
+.freelancer-list-apggination nav .pagination .page-item .page-link.active {
+  background-color: #5F4BDB;
+  color: #ffffff;
+}
+.freelancer-list-apggination nav .pagination .page-item:last-child .page-link {
+  border-radius: 0 4rem 4rem 0;
+}
+.freelancer-list-apggination nav .pagination .page-item:first-child .page-link {
+  border-radius: 4rem 0 0 4rem;
+}
+.freelancer-list-apggination nav .next {
+  color: var(--primary, #5F4BDB);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 2rem;
+}
+.freelancer-list-apggination nav .prev {
+  color: var(--primary, #5F4BDB);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 2rem;
+}
+
+.freelancer-profile-box {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 28px rgba(62, 53, 120, 0.04);
+  padding: 2.5rem;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+}
+.freelancer-profile-box .text-end a {
+  display: block;
+}
+.freelancer-profile-box .text-end a i {
+  font-size: 1.2rem;
+  color: #000000;
+}
+.freelancer-profile-box .avatar {
+  margin-top: -1rem;
+  text-align: center;
+}
+.freelancer-profile-box .avatar img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.freelancer-profile-box .avatar .status {
+  margin-top: -1rem;
+}
+.freelancer-profile-box .avatar .status span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 39px;
+  background: #8A8A8A;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 10px 23px;
+}
+.freelancer-profile-box .avatar .status span i {
+  margin-right: 0.4rem;
+}
+.freelancer-profile-box .avatar .status span.active {
+  background: #30C736;
+}
+.freelancer-profile-box .txt {
+  margin-top: 2rem;
+  text-align: center;
+}
+.freelancer-profile-box .txt h4 {
+  color: var(--dark, #363848);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.freelancer-profile-box .txt h6 {
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.freelancer-profile-box .txt ul {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.freelancer-profile-box .txt ul li {
+  margin: 0 0.1rem;
+}
+.freelancer-profile-box .txt ul li i {
+  font-size: 1rem;
+  color: #FE8D4D;
+}
+.freelancer-profile-box .txt ul li span {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.freelancer-profile-box .table-ftr {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.freelancer-profile-box .table-ftr table {
+  width: 100%;
+}
+.freelancer-profile-box .table-ftr table tr td {
+  padding-top: 0.8rem;
+}
+.freelancer-profile-box .table-ftr table tr td:first-child {
+  color: #636363;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+.freelancer-profile-box .table-ftr table tr td:last-child {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: right;
+}
+
+@media (min-width: 1400px) and (max-width: 1899px) {
+  .freelancer-list-header h3 {
+    font-size: 1.6rem;
+  }
+  .freelancer-list-filter .newst-bttn select {
+    padding: 0.8rem 2rem;
+  }
+  .freelancer-list-apggination nav .pagination .page-item .page-link {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}

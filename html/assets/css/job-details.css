@@ -1,0 +1,492 @@
+.job-details-hero-sec {
+  background: var(--primary, #5F4BDB);
+  padding: 3.5rem 0 12rem;
+}
+.job-details-hero-sec .job-details-hero-txt {
+  text-align: center;
+}
+.job-details-hero-sec .job-details-hero-txt h1 {
+  color: var(--white, #FFF);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.job-details-hero-sec .job-details-hero-txt p {
+  color: var(--white, #FFF);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0.6rem;
+}
+
+.details-sidebar-box {
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 7px 22px 0px rgba(143, 134, 195, 0.07);
+  padding: 2.5rem 1.8rem;
+}
+.details-sidebar-box .profile {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.details-sidebar-box .profile .avatar img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.details-sidebar-box .profile h5 {
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 1.8rem;
+}
+.details-sidebar-box .profile p {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1.8rem;
+}
+.details-sidebar-box .profile a {
+  display: inline-block;
+  border-radius: 60px;
+  background: var(--primary, #5F4BDB);
+  color: var(--white, #FFF);
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  padding: 10px 60px;
+}
+.details-sidebar-box .profile a:hover {
+  background-color: #313131;
+  color: #ffffff;
+}
+.details-sidebar-box .job-status .media {
+  align-items: center;
+}
+.details-sidebar-box .job-status .media i {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 14px;
+  background-color: #5F4BDB;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  margin-right: 0.8rem;
+}
+.details-sidebar-box .job-status .media h5 {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.details-sidebar-box .job-status .media p {
+  color: #AEAEAE;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.details-sidebar-box .about-txt {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #EBEBEB;
+}
+.details-sidebar-box .about-txt h5 {
+  color: var(--dark, #363848);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.details-sidebar-box .about-txt p {
+  color: #313131;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 1rem;
+}
+.details-sidebar-box .bttns {
+  margin-top: 2rem;
+}
+.details-sidebar-box .bttns a:first-child {
+  border-radius: 77px;
+  background: #EEECFF;
+  color: var(--primary, #5F4BDB);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: inline-block;
+  padding: 1rem 1.45rem;
+  margin-right: 0.3rem;
+}
+.details-sidebar-box .bttns a:last-child {
+  border-radius: 77px;
+  color: var(--dark, #363848);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: inline-block;
+  padding: 1rem 1.45rem;
+  border: 1px solid #EDEDED;
+  margin-left: 0.3rem;
+  transition: all linear 0.3s;
+}
+.details-sidebar-box .bttns a:last-child:hover {
+  background-color: #5F4BDB;
+  color: #ffffff;
+}
+
+.job-main-details-box {
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 7px 22px 0px rgba(143, 134, 195, 0.07);
+  padding: 3rem;
+  height: 100%;
+}
+.job-main-details-box .d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.job-main-details-box .d-flex h3 {
+  color: var(--dark, #363848);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.job-main-details-box .d-flex p {
+  color: var(--dark, #363848);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0.5rem;
+}
+.job-main-details-box .d-flex .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.job-main-details-box .d-flex .right a:last-child {
+  border-radius: 37px;
+  background: #FFD9D9;
+  width: 3.7rem;
+  height: 3.7rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all linear 0.2s;
+  border: 1px solid #E6E6E6;
+}
+.job-main-details-box .d-flex .right a:last-child i {
+  font-size: 1.5rem;
+  color: #FF5353;
+}
+.job-main-details-box .d-flex .right a:last-child:hover {
+  border-color: #FF5353;
+  background-color: #FF5353;
+}
+.job-main-details-box .d-flex .right a:last-child:hover i {
+  color: #fff;
+}
+.job-main-details-box .d-flex .right a:first-child {
+  border-radius: 60px;
+  background: #5F4BDB;
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: inline-block;
+  padding: 1.1rem 3rem;
+  margin-right: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.job-main-details-box .d-flex .right a:first-child:hover {
+  background-color: #5F4BDB;
+  color: #fff;
+}
+.job-main-details-box .media {
+  align-items: center;
+  margin-top: 1rem;
+}
+.job-main-details-box .media img {
+  margin-right: 1rem;
+}
+.job-main-details-box .media h5 {
+  color: #2E2E2E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.job-main-details-box .media p {
+  color: #8A8A8A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: normal;
+}
+.job-main-details-box .small-title h5 {
+  color: var(--dark, #363848);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.job-main-details-box .small-title p {
+  color: var(--dark, #363848);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.job-main-details-box .description {
+  margin-top: 3rem;
+}
+.job-main-details-box .description h5 {
+  color: var(--dark, #363848);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.job-main-details-box .description p {
+  color: var(--dark, #363848);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 1rem;
+}
+.job-main-details-box .gallery {
+  margin-top: 3rem;
+}
+.job-main-details-box .gallery h5 {
+  color: var(--dark, #363848);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.job-main-details-box .gallery-img {
+  margin-top: 1.5rem;
+}
+.job-main-details-box .gallery-img img {
+  border-radius: 1rem;
+  display: block;
+  width: 100%;
+}
+
+.job-details-main-sec {
+  margin-top: -8rem;
+}
+
+.job-apply-form {
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 7px 22px 0px rgba(143, 134, 195, 0.07);
+  margin-top: 1.9rem;
+  padding: 2rem 2.5rem;
+}
+.job-apply-form h5 {
+  color: var(--dark, #363848);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.job-apply-form form .form-group {
+  margin-top: 2rem;
+}
+.job-apply-form form .form-group label {
+  color: var(--black, #1F2131);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  line-height: normal;
+  display: block;
+  margin-bottom: 1rem;
+}
+.job-apply-form form .form-group .form-control {
+  border-radius: 60px;
+  border: 1px solid #C2C2C2;
+  background: #FBFBFB;
+  height: 3.8rem;
+  padding-left: 1.6rem;
+  color: var(--dark, #363848);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.job-apply-form form .form-group .form-control:focus-within {
+  border-color: #5F4BDB;
+}
+.job-apply-form form .form-group textarea.form-control {
+  padding-top: 1rem;
+  height: 120px;
+  resize: none;
+  border-radius: 20px;
+}
+.job-apply-form form .attach-resume {
+  margin-top: 3rem;
+}
+.job-apply-form form .form-submit {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.job-apply-form form .form-submit .btn-submit {
+  border-radius: 60px;
+  background: var(--primary, #5F4BDB);
+  color: #FFFDFD;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem 3rem;
+  transition: all linear 0.3s;
+}
+.job-apply-form form .form-submit .btn-submit:hover {
+  background-color: #1F2131;
+}
+.job-apply-form form .form-submit .btn-cancel {
+  border-radius: 60px;
+  background: var(--primary, #F4F4F4);
+  color: #9F9F9F;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem 2rem;
+  transition: all linear 0.3s;
+}
+.job-apply-form form .form-submit .btn-cancel:hover {
+  background-color: #1F2131;
+  color: #ffffff;
+}
+
+.attach-resume input {
+  opacity: 0;
+  height: 0;
+}
+.attach-resume .file-upload label {
+  border-radius: 14px;
+  border: 2px dashed var(--grey-02, #C2C2C2);
+  background: var(--grey-03, #F5F5F5);
+  padding: 0.7rem 0.8rem;
+  cursor: pointer;
+}
+.attach-resume .file-upload label i {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 14px;
+  background-color: #5F4BDB;
+  color: #ffffff;
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+.attach-resume .file-upload label h6 {
+  color: var(--dark, #363848);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 0.2rem;
+}
+.attach-resume .file-upload label p {
+  color: var(--grey-01, #A5A5A5);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.attach-resume #fileInfo {
+  margin-top: 1.6rem;
+}
+.attach-resume #fileInfo div {
+  border-radius: 14px;
+  border: 1px solid var(--primary, #5F4BDB);
+  padding: 0.8rem 1rem;
+  position: relative;
+}
+.attach-resume #fileInfo div .close-button {
+  position: absolute;
+  right: -5px;
+  top: -6px;
+}
+.attach-resume #fileInfo div .close-button i {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.attach-resume #fileInfo div h6 {
+  color: var(--dark, #363848);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0.2rem;
+}
+.attach-resume #fileInfo div p {
+  color: var(--primary, #5F4BDB);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media (min-width: 1400px) and (max-width: 1899px) {
+  .details-sidebar-box {
+    padding: 1.5rem 1.1rem;
+  }
+  .details-sidebar-box .job-status .media h5 {
+    font-size: 1rem;
+  }
+  .details-sidebar-box .bttns a:last-child,
+  .details-sidebar-box .bttns a:first-child {
+    font-size: 14px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

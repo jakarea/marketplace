@@ -1,0 +1,461 @@
+@forward './base/index';
+@use './util/index' as m;
+@use './util/variabls' as v;
+@use './util/media-query' as q;
+
+// variable
+$dark: v.$dark;
+$light: v.$light;
+$primary: v.$primary;
+$c363848: v.$c363848;
+$cFE8D4D: v.$cFE8D4D;
+$c2E2E2E: v.$c2E2E2E;
+$cA9A9A9: v.$cA9A9A9;
+$shadow1: v.$shadow1;
+$shadow2: v.$shadow2;
+$cF0EEFF: v.$cF0EEFF;
+$cF2F2F2: v.$cF2F2F2;
+$cF8F9FD: v.$cF8F9FD;
+$c818181: v.$c818181;
+
+// regular css @e
+.common-heading {
+    @include m.para(2.5rem, 600, $c363848);
+}
+
+.common-para {
+    @include m.para(1rem, 400, $c363848);
+}
+
+.heading-one {
+    @include m.para(3.75rem, 600, $c363848);
+}
+
+.heading-two {
+    @include m.para(3.125rem, 600, $c363848);
+}
+
+.heading-three {
+    @include m.para(2rem, 600, $c363848);
+}
+
+.heading-four {
+    @include m.para(1.875rem, 600, $c363848);
+}
+
+.heading-five {
+    @include m.para(1.5rem, 600, $c363848);
+}
+
+.heading-six {
+    @include m.para(1.125rem, 600, $c363848);
+}
+
+.heading-seven {
+    @include m.para(1rem, 600, $c2E2E2E);
+}
+
+.para-lite {
+    @include m.para(1rem, 400, $cA9A9A9);
+}
+
+.para-dark {
+    @include m.para(1.125rem, 400, $c363848);
+}
+
+.common-bttn {
+    box-shadow: $shadow1;
+    @include m.button(1.125rem, $light, $primary);
+    padding: 1.2rem 2rem;
+
+    &:hover {
+        background-color: $c363848;
+        color: $light;
+    }
+}
+
+.bttn-lite {
+    @include m.button(1rem, $primary, $cF0EEFF)
+}
+
+.pa-y6 {
+    padding: 6rem 0;
+}
+
+.pa-y4 {
+    padding: 4rem 0;
+}
+
+.pa-y2 {
+    padding: 2rem 0;
+}
+
+.ma-t2 {
+    margin-top: 2rem;
+}
+
+.ma-b2 {
+    margin-bottom: 2rem;
+}
+
+.ma-b3 {
+    margin-bottom: 3rem;
+}
+
+// header css start
+.header-section {
+    background-color: $cF8F9FD;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                @include m.para(1.15rem, 400, $c363848);
+                margin-right: 2rem;
+                font-family: "Poppins", sans-serif;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+
+            .nav-link.active {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .d-flex {
+        align-items: center;
+
+        .search-box {
+            position: relative;
+            min-width: 375px;
+            margin-right: 1rem;
+
+            input {
+                border-radius: 37px;
+                background: $light;
+                height: 3.2rem;
+                background-color: $light;
+                border: 0;
+                @include m.para(1rem, 400, $c818181);
+                padding: 0 1rem;
+                display: block;
+                width: 100%;
+            }
+
+            i {
+                position: absolute;
+                right: 1.5rem;
+                top: 1rem;
+                color: #646464;
+                font-size: 1.2rem;
+            }
+        }
+
+        .bttn-login {
+            border-radius: 2.5rem;
+            padding: 0.9rem 2.4rem;
+            display: inline-block;
+            background: $cF0EEFF;
+            font-family: "Poppins", sans-serif;
+            margin-right: 1rem;
+            @include m.para(1.15rem, 600, $c363848);
+            transition: all linear .2s;
+
+            &:hover {
+                background-color: $primary;
+                color: $light;
+            }
+        }
+
+        .bttn-regis {
+            border-radius: 2.5rem;
+            padding: 0.9rem 2.4rem;
+            display: inline-block;
+            background: $primary;
+            font-family: "Poppins", sans-serif;
+            @include m.para(1.15rem, 600, $light);
+            transition: all linear .2s;
+
+            &:hover {
+                background-color: $cF0EEFF;
+                color: $c363848;
+            }
+        }
+    }
+}
+
+.header-2 {
+    background-color: $light;
+
+    .d-flex {
+        .search-box {
+
+            input {
+                border: 1px solid #F0EEFF;
+            }
+        }
+
+    }
+}
+
+// header css end
+
+// event hero
+.event-hero-box {
+    border-radius: 30px;
+    background: #372F67;
+
+    .event-hero-img {}
+
+    .event-hero-txt {
+        padding: 1.3rem 1.2rem;
+        padding-right: 5rem;
+
+        h1 {
+            color: var(--white, #FFF);
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        h6 {
+            color: #BFB5FF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+            @include m.df;
+            margin: 1rem 0;
+
+            i {
+                font-size: .6rem;
+                margin: 0 1rem;
+            }
+        }
+
+        p {
+            color: var(--white, #FFF);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            margin-bottom: 1rem;
+        }
+
+        .progress {
+            border-radius: 15px;
+            background: #2A2352;
+            height: 8px;
+            margin-top: 1.5rem;
+
+            .progress-bar {
+                border-radius: 15px;
+                height: 8px;
+                background: var(--primary, #5F4BDB);
+            }
+        }
+
+        .d-flex {
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0.8rem;
+
+            h5 {
+                color: var(--white, #FFF);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        .bttns {
+            margin-top: 1.5rem;
+
+            a {
+                &:first-child {
+                    border-radius: 37px;
+                    background: var(--primary, #5F4BDB);
+                    color: var(--white, #FFF);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    display: inline-block;
+                    padding: 1rem 3.2rem;
+                    margin-right: 1.5rem;
+                    transition: all linear .3s;
+                    &:hover{
+                        background-color: #1F2131;
+                    }
+                }
+
+                &:last-child {
+                    border-radius: 37px;
+                    background: rgba(255, 255, 255, 0.08);
+                    color: var(--white, #FFF);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    display: inline-block;
+                    padding: 1rem 2rem; 
+                    transition: all linear .3s;
+                    i{
+                        margin-right: 0.5rem;
+                    }
+                    &:hover{
+                        background-color: #5F4BDB;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.pt-custom {
+    padding-top: 7rem;
+}
+
+// footer css
+.footer-section {
+    background: var(--black, #1F2131);
+    padding: 6rem 0 1rem;
+
+    .subscribe-txt {
+        margin-bottom: 2rem;
+
+        h4 {
+            color: var(--white, #FFF);
+            font-family: Poppins;
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 76px;
+            /* 172.727% */
+        }
+    }
+
+    .subscribe-box {
+        .form-group {
+            position: relative;
+
+            .form-control {
+                border-radius: 60px;
+                border: 1px solid #363843;
+                background-color: transparent;
+                height: 4.5rem;
+                color: #fff;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                padding-left: 1.5rem;
+                padding-right: 5rem;
+            }
+
+            .btn-submit {
+                border-radius: 37px;
+                background: var(--accent, #FE8D4D);
+                color: var(--white, #FFF);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                display: inline-block;
+                padding: 0.9rem 2.2rem;
+                position: absolute;
+                right: 12px;
+                top: 9px;
+
+                &:hover {
+                    background-color: $light;
+                    color: #FF8412;
+                }
+            }
+        }
+    }
+
+    .ftr-links {
+        h5 {
+            color: var(--white, #FFF);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            li {
+                a {
+                    display: block;
+                    color: var(--white, #FFF);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-top: 1.25rem;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        margin-left: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .media {
+            align-items: center;
+            margin-top: 1.25rem;
+
+            h6 {
+                color: var(--white, #FFF);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            img {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    .ftr-copy {
+        border-top: 1px solid rgba(255, 255, 255, 0.126);
+        padding-top: 1.5rem;
+        margin-top: 7.5rem;
+        @include m.df(space-between);
+
+        p {
+            color: var(--white, #FFF);
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+            i {
+                color: #FF5353;
+                margin: 0 .5rem;
+            }
+        }
+    }
+}
+
+
+// custom container width
+@media (min-width: 1700px) {
+    .container {
+        max-width: 1620px !important;
+    }
+}

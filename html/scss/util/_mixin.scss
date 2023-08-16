@@ -1,0 +1,51 @@
+@use './variabls' as v;
+
+// text styling 
+@mixin para($font:1rem,$weight:400,$color:v.$primary){
+    font: {
+        size: $font;
+        weight: $weight;
+    }
+    color: $color;  
+    line-height: normal;
+}
+
+// button styling
+@mixin button($font,$color,$bg){
+    font: {
+        size: $font;
+        weight: 600;
+    }
+    color: $color; 
+    line-height: normal;
+    background: $bg;
+    display: inline-block; 
+    padding: 0.75rem 1.5rem;
+    border-radius: 2.5rem;
+    transition: all linear .3s;
+}
+
+// flex styling
+@mixin df($jc:flex-start){
+    display: flex;
+    align-items: center;
+    justify-content: $jc;
+}
+
+// backround image
+@mixin bgi($url){ 
+    background: { 
+        image: url($url);
+        size: cover;
+        position: center center;
+        repeat: no-repeat;
+    }
+
+}
+
+// box model styling
+@mixin box($padding,$radius,$bg){
+    padding: $padding;
+    border-radius: $radius;
+    background-color: $bg;
+}
